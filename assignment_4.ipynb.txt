@@ -1,0 +1,31 @@
+# Question 1
+import pandas as pd
+import os
+df=pd.DataFrame(
+    {
+        "1_name":['A'],
+        "2_age":[21],
+        "3_mail_id":['abc@gmail.com'],
+        "4_phone_no":[9820942409]
+    }
+)
+df
+df=pd.DataFrame(
+    {
+        "1_name":['A','X'],
+        "2_age":[21,20],
+        "3_mail_id":['abc@gmail.com','xyz@yahoo.com'],
+        "4_phone_no":[9820942409,8503750076]
+    }
+)
+df
+
+# Question 2
+import pandas as pd
+import numpy as np
+w=pd.read_csv("weather.csv")
+w.head(5)
+w.head(10)
+w.describe()
+w.tail(5)
+print describe(w.iloc[:,[2]])
