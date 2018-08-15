@@ -1,0 +1,19 @@
+# Question 1
+import pandas as pd
+w=pd.read_csv('https://raw.githubusercontent.com/Shreyas3108/Weather/master/weather.csv')
+a=w.isnull().sum()
+print(a)
+print(w.dropna())
+w=pd.read_csv('https://raw.githubusercontent.com/Shreyas3108/Weather/master/weather.csv')
+b=w.fillna(w.mean)
+print(b)
+print(w.dtypes)
+c=pd.Series(w.MinTemp)
+print(c)
+d=pd.Series(w.MaxTemp)
+print(d)
+e=pd.Series(w.Temp9am)
+print(e)
+f=pd.Series(w.Temp3pm)
+print(f)
+
